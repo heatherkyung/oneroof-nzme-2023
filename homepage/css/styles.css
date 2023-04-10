@@ -129,7 +129,7 @@ body {
   display: block;
   width: 100%;
   height: 100%;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 .search-section {
   flex-direction: column;
@@ -303,7 +303,7 @@ body {
 .innerbox {
   position: relative;
   overflow: hidden;
-  padding-top: 80%;
+  padding-top: 60%;
 }
 
 .location-list,
@@ -320,7 +320,7 @@ body {
 .property-card {
   width: 100%;
   display: inline-block;
-  border-radius: 5px;
+  border-radius: 10px;
   overflow: hidden;
   background-color: #f4f4f7;
   box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.4);
@@ -357,16 +357,22 @@ body {
   border-radius: 20px;
   border: 0;
   display: inline-block;
-  font-size: 12px;
-  line-height: 15px;
-  padding: 3px 18px;
+  font-size: 15px;
+  line-height: 20px;
+  padding: 3px 20px;
   color: #fff;
+}
+.save-icon {
+  position: absolute;
+  z-index: 1;
+  right: 10px;
+  top: 10px;
 }
 .ppt-detail {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  padding: 10px 20px;
 }
 .ppt-info {
   width: 100%;
@@ -441,13 +447,13 @@ body {
 }
 .adbox {
   display: block;
-  border-radius: 5px;
+  border-radius: 10px;
   width: 48%;
 }
 .adbox a img {
   width: 100%;
   height: auto;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 .downloadapp {
   margin: 20px;
@@ -498,16 +504,19 @@ body {
   display: block;
 }
 .qrcode {
-  width: 45%;
+  display: flex;
+  width: 35%;
   position: relative;
-  left: 15%;
+  left: 10%;
   top: 18px;
   z-index: 2;
 }
 .mobile {
-  width: 60%;
+  display: flex;
   position: relative;
   z-index: 1;
+  height: 500px;
+  max-height: 500px;
 }
 .footer {
   background-color: #f4f4f7;
@@ -615,23 +624,34 @@ body {
   border-style: solid;
   border-color: #707070;
   border-radius: 10px;
-  text-decoration: none;
+  justify-content: space-around;
   display: flex;
   flex-direction: column;
   text-decoration: none;
   padding: 40px 20px 20px 20px;
 }
 .agent-listcard {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #f4f4f7;
   box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.4);
   text-decoration: none;
+  padding: 20px 10px;
+  border-radius: 10px;
+  max-height: 350px;
+  justify-content: space-around;
 }
 .find-agentbox,
 .agent-listbox {
   width: 15%;
+  height: 350px;
+  max-height: 350px;
+  display: flex;
 }
 .oneroof-logo img {
-  width: 150px;
+  width: 180px;
   padding-bottom: 20px;
 }
 .find-agent-title {
@@ -668,7 +688,7 @@ body {
   border: none;
   background-color: #ff8500;
   color: #fff;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 600;
   padding: 10px;
   border-radius: 5px;
@@ -676,4 +696,98 @@ body {
 }
 .find-agent-btn:hover {
   background-color: #e67700;
+}
+.agent-listbox {
+  display: flex;
+  width: 15%;
+  height: 350px;
+  max-height: 350px;
+}
+.agent-listcard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f4f7;
+  box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  padding: 20px 10px;
+  border-radius: 10px;
+  max-height: 350px;
+}
+.agent-logotop img {
+  width: 120px;
+}
+.agent-info {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.agent-photo img {
+  border-radius: 50%;
+  width: 80px;
+}
+.agent-detail {
+  padding-left: 10px;
+}
+.agent-name {
+  font-size: 18px;
+  font-weight: 600;
+}
+.agent-location {
+  font-size: 12px;
+  font-weight: 400;
+}
+.card-hl {
+  border-bottom: 1px solid #818da9;
+  width: 90%;
+  margin: 10px 0px;
+}
+.portfolio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.pf-price,
+.pf-sold,
+.pf-listing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pf-num {
+  font-size: 18px;
+  font-weight: 600;
+}
+.pf-subtext {
+  font-size: 12px;
+  font-weight: 400;
+}
+.agent-listcard a {
+  color: #000;
+  font-size: 12px;
+  padding: 10px;
+}
+.agent-request-btn {
+  width: 90%;
+  padding: 10px;
+  border-radius: 5px;
+  border-color: #252931;
+  border-width: 1px;
+  background-color: transparent;
+  color: #252931;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.agent-request-btn:hover {
+  border-width: 1px;
+  border-color: #252931;
+  background-color: #252931;
+  color: #fff;
+  width: 90%;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 600;
 }

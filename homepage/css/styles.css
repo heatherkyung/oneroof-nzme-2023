@@ -121,8 +121,11 @@ body {
   font-size: 40px;
 }
 .hero-inner {
-  background: url(https://www.homes.com/assets/images/211/hero-image-desktop.jpg)
+  background: url(https://github.com/heatherkyung/oneroof-nzme-2023/blob/main/img/hero-image.jpeg?raw=true)
     no-repeat center;
+  background-size: 100% auto;
+  background-color: grey;
+  background-blend-mode: multiply;
   display: block;
   width: 100%;
   height: 100%;
@@ -205,6 +208,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 50px;
 }
 .category-icon {
   display: flex;
@@ -225,8 +229,9 @@ body {
   font-weight: 500;
 }
 .homes,
-.location {
-  margin: 20px;
+.location,
+.propertyagent {
+  margin: 20px 20px 80px 20px;
 }
 .title {
   display: flex;
@@ -272,11 +277,11 @@ body {
   color: #000;
 }
 .status {
-  margin: 20px;
+  margin: 20px 20px 80px 20px;
 }
 .statusbox {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   margin: 30px 50px;
 }
@@ -294,15 +299,309 @@ body {
   border-left: 2px solid #d5d5d5;
   height: 80px;
 }
+
+.innerbox {
+  position: relative;
+  overflow: hidden;
+  padding-top: 80%;
+}
+
+.location-list,
 .property-list {
   display: flex;
   justify-content: space-between;
   margin: 30px 0px;
 }
-.property-card {
-  border-radius: 5px;
+.location-listbox,
+.property-listbox {
   width: 24%;
-  height: 350px;
-  background-color: #818da9;
+}
+.location-card,
+.property-card {
+  width: 100%;
+  display: inline-block;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #f4f4f7;
+  box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+}
+.lc-cover,
+.ppt-cover {
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+.inner {
+  position: relative;
+  overflow: hidden;
+  padding-top: 60%;
+}
+.inner img,
+.innerbox img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.tag {
+  position: absolute;
+  z-index: 1;
+  left: 10px;
+  top: 10px;
+}
+.tag-new {
+  background-color: #ff8500;
+  border-radius: 20px;
+  border: 0;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 15px;
+  padding: 3px 18px;
+  color: #fff;
+}
+.ppt-detail {
+  display: flex;
+  align-items: center;
   justify-content: space-between;
+  padding: 20px;
+}
+.ppt-info {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.ppt-price {
+  width: 90%;
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+}
+.ppt-address {
+  width: 90%;
+  font-size: 13px;
+  font-weight: 400;
+  color: #000;
+}
+.data {
+  display: flex;
+  width: 90%;
+  gap: 15px;
+}
+.databox {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #000;
+}
+.icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  color: #000;
+}
+.agent {
+  width: 20%;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.agent-photo img {
+  border-radius: 50%;
+  width: 80px;
+}
+.agent-logo img {
+  width: 80px;
+}
+.lc-detail {
+  padding: 15px;
+  background-color: #f4f4f7;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.lc-name {
+  font-size: 15px;
+  font-weight: 600;
+  color: #000;
+}
+.lc-amount {
+  font-size: 15px;
+  font-weight: 600;
+  color: #ff8500;
+}
+.ad {
+  margin: 20px 20px 80px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.adbox {
+  display: block;
+  border-radius: 5px;
+  width: 48%;
+}
+.adbox a img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.downloadapp {
+  margin: 20px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+}
+.app-textbox {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+  margin: 50px;
+}
+.bodycopy {
+  line-break: auto;
+  font-size: large;
+  line-height: 1.5;
+}
+.app-imgbox {
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+}
+.app-imgs {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.app-imgs img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.appbtn {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: left;
+  margin: 30px 0px;
+}
+.gg-btn a img,
+.apl-btn a img {
+  width: 150px;
+  display: block;
+}
+.qrcode {
+  width: 45%;
+  position: relative;
+  left: 15%;
+  top: 18px;
+  z-index: 2;
+}
+.mobile {
+  width: 60%;
+  position: relative;
+  z-index: 1;
+}
+.footer {
+  background-color: #f4f4f7;
+  padding: 50px;
+}
+.footer-container {
+  width: 100%;
+  margin: 0 auto;
+}
+.section-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.hl {
+  border-bottom: 1px solid #818da9;
+  width: 100%;
+  margin: 20px 0px;
+}
+.section-item {
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+.item {
+  display: flex;
+  max-width: 320px;
+  flex-direction: column;
+}
+.listing {
+  display: flex;
+  flex-direction: column;
+}
+.listing-title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #252931;
+}
+.item a {
+  text-decoration: none;
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #252931;
+}
+.address {
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #252931;
+}
+.footer-container-copyright {
+  background-color: #252931;
+  padding: 20px 50px;
+}
+.footer-copyright {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-copyright {
+  color: #f4f4f7;
+  font-size: 15px;
+  font-weight: 400;
+}
+.section-link {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.section-link a {
+  text-decoration: none;
+  color: #f4f4f7;
+  font-size: 15px;
+  font-weight: 400;
+}
+.footer-btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 150px 0 0 0;
+  flex-direction: row-reverse;
+  gap: 10px;
+}
+.nzme img {
+  width: 150px;
 }

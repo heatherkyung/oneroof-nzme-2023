@@ -2,6 +2,10 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/c16fe18631.js"
+      crossorigin="anonymous"
+    ></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,8 +17,9 @@
         <div class="header-logo">
           <a href="#" class="logo">
             <img
+              alt="oneroof-logo"
               class="img"
-              src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI1LjIuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAyMzMgNDIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDIzMyA0MjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiNGRjg1MDA7fQoJLnN0MXtmaWxsOiMyNTI5MzE7fQo8L3N0eWxlPgo8cGF0aCBjbGFzcz0ic3QwIiBkPSJNNDEuNiwyOWgtNS40di03LjZMMjMuMyw5LjlMMTAuNCwyMS40VjI5SDVWMTlMMjMuMywyLjZMNDEuNiwxOVYyOXogTTUsMzIuNWgzNi42djUuNEg1VjMyLjV6Ii8+CjxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik02NC45LDMxLjJjNC42LDAsOS43LTMuMSw5LjctMTAuMXMtNS0xMC4yLTkuNy0xMC4yYy00LjcsMC05LjcsMy4yLTkuNywxMC4yQzU1LjIsMjguMSw2MC4zLDMxLjIsNjQuOSwzMS4yCgkgTTY0LjksMy42YzkuNCwwLDE3LjQsNi45LDE3LjQsMTcuNWMwLDEwLjYtOCwxNy40LTE3LjQsMTcuNGMtOS41LDAtMTcuNS02LjktMTcuNS0xNy41QzQ3LjUsMTAuNSw1NS41LDMuNiw2NC45LDMuNiBNOTIuNCwzNy45CgloLTcuMlYxNC40aDd2Mi43YzEuMy0yLjIsNC4yLTMuMyw2LjYtMy4zYzUuOSwwLDguNiw0LjIsOC42LDkuNHYxNC44aC03LjJWMjQuNGMwLTIuMy0xLjItNC4xLTMuOC00LjFjLTIuNCwwLTMuOSwxLjgtMy45LDQuMQoJTDkyLjQsMzcuOUw5Mi40LDM3Ljl6IE0xMjYuMiwyMy4zYy0wLjEtMS44LTEuMy00LTQuNy00Yy0zLDAtNC41LDIuMi00LjcsNEMxMTYuNywyMy4zLDEyNi4yLDIzLjMsMTI2LjIsMjMuM3ogTTEzMi43LDMxLjEKCWMtMS4xLDQuMS00LjksNy41LTEwLjgsNy41Yy02LjUsMC0xMi4yLTQuNi0xMi4yLTEyLjVjMC03LjYsNS42LTEyLjQsMTEuNy0xMi40YzcuMywwLDExLjgsNC41LDExLjgsMTIuMWMwLDEtMC4xLDIuMS0wLjEsMi4yCgloLTE2LjRjMC4xLDIuNiwyLjYsNC41LDUuMyw0LjVjMi42LDAsNC4xLTEuMiw0LjctMy4xTDEzMi43LDMxLjF6IE0xNDgsMTljMy4xLDAsNC43LTEuNyw0LjctNC4xYzAtMi41LTEuNy00LjEtNC43LTQuMWgtNC40VjE5CglMMTQ4LDE5TDE0OCwxOXogTTE0Ni4yLDI1LjRoLTIuNnYxMi41aC03LjVWNC40aDEzLjNjNi42LDAsMTAuOSw0LjUsMTAuOSwxMC41YzAsNC41LTIuNSw4LTYuNiw5LjVsNi44LDEzLjZoLTguMgoJQzE1Mi4yLDM3LjksMTQ2LjIsMjUuNCwxNDYuMiwyNS40eiIvPgo8cGF0aCBjbGFzcz0ic3QxIiBkPSJNMTc4LDI2LjFjMC00LTIuNi01LjgtNS4zLTUuOGMtMi43LDAtNS4zLDEuOS01LjMsNS44YzAsMy45LDIuNiw1LjksNS4zLDUuOUMxNzUuNCwzMiwxNzgsMzAuMSwxNzgsMjYuMQoJIE0xODUuMiwyNi4xYzAsNy4zLTUuNCwxMi41LTEyLjUsMTIuNWMtNywwLTEyLjUtNS4yLTEyLjUtMTIuNWMwLTcuMyw1LjUtMTIuNCwxMi41LTEyLjRDMTc5LjcsMTMuNywxODUuMiwxOC44LDE4NS4yLDI2LjEKCSBNMjA0LjcsMjYuMWMwLTQtMi42LTUuOC01LjMtNS44Yy0yLjcsMC01LjMsMS45LTUuMyw1LjhjMCwzLjksMi42LDUuOSw1LjMsNS45QzIwMi4yLDMyLDIwNC43LDMwLjEsMjA0LjcsMjYuMSBNMjExLjksMjYuMQoJYzAsNy4zLTUuNCwxMi41LTEyLjUsMTIuNWMtNywwLTEyLjUtNS4yLTEyLjUtMTIuNWMwLTcuMyw1LjUtMTIuNCwxMi41LTEyLjRDMjA2LjUsMTMuNywyMTEuOSwxOC44LDIxMS45LDI2LjEgTTIyMy43LDIwLjR2MTcuNQoJaC03LjJWMjAuNGgtMy43di02LjFoMy43di0yYzAtNS40LDMuMy05LjEsOS05LjFjMS41LDAsMi44LDAuMiwzLjQsMC41djUuOWMtMC40LTAuMS0xLTAuMi0yLjEtMC4yYy0xLjMsMC0zLjEsMC42LTMuMSwzLjJ2MS44aDUuMQoJdjYuMUwyMjMuNywyMC40TDIyMy43LDIwLjR6Ii8+Cjwvc3ZnPgo="
+              src="https://raw.githubusercontent.com/heatherkyung/oneroof-nzme-2023/feb1fe2b88cc63f59cd28eeb190eeb6801f6f79c/img/logo.svg"
             />
           </a>
         </div>
@@ -158,21 +163,249 @@
       </div>
 
       <div class="property-list">
-        <div class="property-card">
-          <div class="ppt-img"></div>
-          <div class="ppt-detail"></div>
+        <div class="property-listbox">
+          <a href="#" class="ppt-card">
+            <div class="property-card">
+              <div class="ppt-cover">
+                <div class="innerbox">
+                  <img
+                    src="https://s.oneroof.co.nz/image/e8/fa/e8fa2c94b601c6d674d4e1d6b74b52e3.jpg?x-oss-process=image/quality,q_80/resize,w_630/format,webp"
+                  />
+                </div>
+                <div class="tag">
+                  <div class="tag-new">
+                    <span>New</span>
+                  </div>
+                </div>
+              </div>
+              <div class="ppt-detail">
+                <div class="ppt-info">
+                  <div class="ppt-price">By Negotiation</div>
+                  <div class="ppt-address">
+                    28 Minnehaha Avenue, Titirangi, Waitakere City
+                  </div>
+                  <div class="data">
+                    <div class="databox">
+                      <img
+                        class="icon"
+                        src="https://github.com/heatherkyung/oneroof-nzme-2023/blob/main/img/bed.png?raw=true"
+                      />
+                      <span>3</span>
+                    </div>
+                    <div class="databox">
+                      <img
+                        class="icon"
+                        src="https://github.com/heatherkyung/oneroof-nzme-2023/blob/main/img/bathtub.png?raw=true"
+                      />
+                      <span>3</span>
+                    </div>
+                    <div class="databox">
+                      <img
+                        class="icon"
+                        src="https://github.com/heatherkyung/oneroof-nzme-2023/blob/main/img/garage.png?raw=true"
+                      />
+                      <span>3</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="agent">
+                  <div class="agent-photo">
+                    <img
+                      src="https://s.oneroof.co.nz/image/76/0f/760f1ba8131ddb4498c3bebce6e76295.jpg?x-oss-process=image/quality,q_80/resize,w_120/format,webp"
+                    />
+                  </div>
+                  <div class="agent-logo">
+                    <img
+                      src="https://s.oneroof.co.nz/image/9a/81/9a81baee02fff5483be0c0b30ff5e2d5.jpg?x-oss-process=image/quality,q_80/resize,h_37"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
         </div>
-        <div class="property-card">
-          <div class="ppt-img"></div>
-          <div class="ppt-detail"></div>
+        <div class="property-listbox">
+          <a href="#" class="ppt-card">
+            <div class="property-card">
+              <div class="ppt-cover">
+                <div class="innerbox">
+                  <img
+                    src="https://s.oneroof.co.nz/image/e8/fa/e8fa2c94b601c6d674d4e1d6b74b52e3.jpg?x-oss-process=image/quality,q_80/resize,w_630/format,webp"
+                  />
+                </div>
+                <div class="tag">
+                  <div class="tag-new">
+                    <span>New</span>
+                  </div>
+                </div>
+              </div>
+              <div class="ppt-detail">
+                <div class="ppt-info">
+                  <div class="ppt-price">By Negotiation</div>
+                  <div class="ppt-address">
+                    28 Minnehaha Avenue, Titirangi, Waitakere City
+                  </div>
+                  <div class="data">
+                    <div class="databox">
+                      <img
+                        class="icon"
+                        src="https://github.com/heatherkyung/oneroof-nzme-2023/blob/main/img/bed.png?raw=true"
+                      />
+                      <span>3</span>
+                    </div>
+                    <div class="databox">
+                      <img
+                        class="icon"
+                        src="https://github.com/heatherkyung/oneroof-nzme-2023/blob/main/img/bathtub.png?raw=true"
+                      />
+                      <span>3</span>
+                    </div>
+                    <div class="databox">
+                      <img
+                        class="icon"
+                        src="https://github.com/heatherkyung/oneroof-nzme-2023/blob/main/img/garage.png?raw=true"
+                      />
+                      <span>3</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="agent">
+                  <div class="agent-photo">
+                    <img
+                      src="https://s.oneroof.co.nz/image/76/0f/760f1ba8131ddb4498c3bebce6e76295.jpg?x-oss-process=image/quality,q_80/resize,w_120/format,webp"
+                    />
+                  </div>
+                  <div class="agent-logo">
+                    <img
+                      src="https://s.oneroof.co.nz/image/9a/81/9a81baee02fff5483be0c0b30ff5e2d5.jpg?x-oss-process=image/quality,q_80/resize,h_37"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
         </div>
-        <div class="property-card">
-          <div class="ppt-img"></div>
-          <div class="ppt-detail"></div>
+        <div class="property-listbox">
+          <a href="#" class="ppt-card">
+            <div class="property-card">
+              <div class="ppt-cover">
+                <div class="innerbox">
+                  <img
+                    src="https://s.oneroof.co.nz/image/e8/fa/e8fa2c94b601c6d674d4e1d6b74b52e3.jpg?x-oss-process=image/quality,q_80/resize,w_630/format,webp"
+                  />
+                </div>
+                <div class="tag">
+                  <div class="tag-new">
+                    <span>New</span>
+                  </div>
+                </div>
+              </div>
+              <div class="ppt-detail">
+                <div class="ppt-info">
+                  <div class="ppt-price">By Negotiation</div>
+                  <div class="ppt-address">
+                    28 Minnehaha Avenue, Titirangi, Waitakere City
+                  </div>
+                  <div class="data">
+                    <div class="databox">
+                      <img
+                        class="icon"
+                        src="https://github.com/heatherkyung/oneroof-nzme-2023/blob/main/img/bed.png?raw=true"
+                      />
+                      <span>3</span>
+                    </div>
+                    <div class="databox">
+                      <img
+                        class="icon"
+                        src="https://github.com/heatherkyung/oneroof-nzme-2023/blob/main/img/bathtub.png?raw=true"
+                      />
+                      <span>3</span>
+                    </div>
+                    <div class="databox">
+                      <img
+                        class="icon"
+                        src="https://github.com/heatherkyung/oneroof-nzme-2023/blob/main/img/garage.png?raw=true"
+                      />
+                      <span>3</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="agent">
+                  <div class="agent-photo">
+                    <img
+                      src="https://s.oneroof.co.nz/image/76/0f/760f1ba8131ddb4498c3bebce6e76295.jpg?x-oss-process=image/quality,q_80/resize,w_120/format,webp"
+                    />
+                  </div>
+                  <div class="agent-logo">
+                    <img
+                      src="https://s.oneroof.co.nz/image/9a/81/9a81baee02fff5483be0c0b30ff5e2d5.jpg?x-oss-process=image/quality,q_80/resize,h_37"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
         </div>
-        <div class="property-card">
-          <div class="ppt-img"></div>
-          <div class="ppt-detail"></div>
+        <div class="property-listbox">
+          <a href="#" class="ppt-card">
+            <div class="property-card">
+              <div class="ppt-cover">
+                <div class="innerbox">
+                  <img
+                    src="https://s.oneroof.co.nz/image/e8/fa/e8fa2c94b601c6d674d4e1d6b74b52e3.jpg?x-oss-process=image/quality,q_80/resize,w_630/format,webp"
+                  />
+                </div>
+                <div class="tag">
+                  <div class="tag-new">
+                    <span>New</span>
+                  </div>
+                </div>
+              </div>
+              <div class="ppt-detail">
+                <div class="ppt-info">
+                  <div class="ppt-price">By Negotiation</div>
+                  <div class="ppt-address">
+                    28 Minnehaha Avenue, Titirangi, Waitakere City
+                  </div>
+                  <div class="data">
+                    <div class="databox">
+                      <img
+                        class="icon"
+                        src="https://github.com/heatherkyung/oneroof-nzme-2023/blob/main/img/bed.png?raw=true"
+                      />
+                      <span>3</span>
+                    </div>
+                    <div class="databox">
+                      <img
+                        class="icon"
+                        src="https://github.com/heatherkyung/oneroof-nzme-2023/blob/main/img/bathtub.png?raw=true"
+                      />
+                      <span>3</span>
+                    </div>
+                    <div class="databox">
+                      <img
+                        class="icon"
+                        src="https://github.com/heatherkyung/oneroof-nzme-2023/blob/main/img/garage.png?raw=true"
+                      />
+                      <span>3</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="agent">
+                  <div class="agent-photo">
+                    <img
+                      src="https://s.oneroof.co.nz/image/76/0f/760f1ba8131ddb4498c3bebce6e76295.jpg?x-oss-process=image/quality,q_80/resize,w_120/format,webp"
+                    />
+                  </div>
+                  <div class="agent-logo">
+                    <img
+                      src="https://s.oneroof.co.nz/image/9a/81/9a81baee02fff5483be0c0b30ff5e2d5.jpg?x-oss-process=image/quality,q_80/resize,h_37"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
     </div>
@@ -209,10 +442,87 @@
           <a href="#">Canterburry</a>
         </div>
       </div>
+
+      <div class="location-list">
+        <div class="location-listbox">
+          <a href="#" class="lc-card">
+            <div class="location-card">
+              <div class="lc-cover">
+                <div class="inner">
+                  <img
+                    src="https://s.oneroof.co.nz/image/19/41/19417078d0ad88a0c3fad11ed82f5919.jpg?x-oss-process=image/quality,q_80/resize,w_550/format,webp"
+                  />
+                </div>
+              </div>
+              <div class="lc-detail">
+                <div class="lc-name">Auckland City</div>
+                <!--data-->
+                <div class="lc-amount">853</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="location-listbox">
+          <a href="#" class="lc-card">
+            <div class="location-card">
+              <div class="lc-cover">
+                <div class="inner">
+                  <img
+                    src="https://s.oneroof.co.nz/image/19/41/19417078d0ad88a0c3fad11ed82f5919.jpg?x-oss-process=image/quality,q_80/resize,w_550/format,webp"
+                  />
+                </div>
+              </div>
+              <div class="lc-detail">
+                <div class="lc-name">Auckland City</div>
+                <!--data-->
+                <div class="lc-amount">853</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="location-listbox">
+          <a href="#" class="lc-card">
+            <div class="location-card">
+              <div class="lc-cover">
+                <div class="inner">
+                  <img
+                    src="https://s.oneroof.co.nz/image/19/41/19417078d0ad88a0c3fad11ed82f5919.jpg?x-oss-process=image/quality,q_80/resize,w_550/format,webp"
+                  />
+                </div>
+              </div>
+              <div class="lc-detail">
+                <div class="lc-name">Auckland City</div>
+                <!--data-->
+                <div class="lc-amount">853</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="location-listbox">
+          <a href="#" class="lc-card">
+            <div class="location-card">
+              <div class="lc-cover">
+                <div class="inner">
+                  <img
+                    src="https://s.oneroof.co.nz/image/19/41/19417078d0ad88a0c3fad11ed82f5919.jpg?x-oss-process=image/quality,q_80/resize,w_550/format,webp"
+                  />
+                </div>
+              </div>
+              <div class="lc-detail">
+                <div class="lc-name">Auckland City</div>
+                <!--data-->
+                <div class="lc-amount">853</div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
     </div>
 
     <div class="status">
-      <h1 class="header-title">What is happening in Auckland</h1>
+      <div class="title">
+        <h1 class="header-title">What is happening in Auckland</h1>
+      </div>
       <div class="statusbox">
         <div class="status-number">
           <!--data-->
@@ -240,9 +550,224 @@
       </div>
     </div>
 
-    <script
-      src="https://kit.fontawesome.com/c16fe18631.js"
-      crossorigin="anonymous"
-    ></script>
+    <div class="ad">
+      <div class="adbox">
+        <a
+          ><img
+            alt="2dgrees"
+            src="https://github.com/heatherkyung/oneroof-nzme-2023/blob/main/img/2dgrees.png?raw=true"
+            href="#"
+          />
+        </a>
+      </div>
+      <div class="adbox">
+        <a
+          ><img
+            alt="kiwibank"
+            src="https://github.com/heatherkyung/oneroof-nzme-2023/blob/main/img/kiwibank.png?raw=true"
+            href="#"
+          />
+        </a>
+      </div>
+    </div>
+
+    <div class="propertyagent">
+      <div class="title">
+        <h1 class="header-title">Highly recommended agents</h1>
+        <div class="nav-arrow">
+          <div class="nav-arrow-left">
+            <i class="fa-solid fa-circle-arrow-left fa-2xl"></i>
+          </div>
+          <div class="nav-arrow-right">
+            <i class="fa-solid fa-circle-arrow-right fa-2xl"></i>
+          </div>
+        </div>
+      </div>
+      <div class="agent-list"></div>
+    </div>
+
+    <div class="downloadapp">
+      <div class="app-textbox">
+        <h1 class="title">Get the OneRoof app</h1>
+        <span class="bodycopy">
+          Download our top-rated real estate app for iOS or Android to get
+          alerts the moment your dream home hits the market.
+        </span>
+        <div class="appbtn">
+          <div class="gg-btn">
+            <a href="#">
+              <img
+                alt="googleplay"
+                src="https://github.com/heatherkyung/oneroof-nzme-2023/blob/main/img/Google%20Play.png?raw=true"
+              />
+            </a>
+          </div>
+          <div class="apl-btn">
+            <a href="#">
+              <img
+                alt="applestore"
+                src="https://github.com/heatherkyung/oneroof-nzme-2023/blob/main/img/App%20Store.png?raw=true"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="app-imgbox">
+        <div class="app-imgs">
+          <div class="qrcode">
+            <img
+              alt="qrcode"
+              src="https://github.com/heatherkyung/oneroof-nzme-2023/blob/main/img/QR%20Code.png?raw=true"
+            />
+          </div>
+          <div class="mobile">
+            <img
+              alt="app-mobile"
+              src="https://github.com/heatherkyung/oneroof-nzme-2023/blob/main/img/Mask.png?raw=true"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-container">
+        <div class="section-logo">
+          <a href="#">
+            <img
+              class="logo"
+              alt="oneroof"
+              src="https://raw.githubusercontent.com/heatherkyung/oneroof-nzme-2023/41ba66154e0a650b212b5132942b9840688b87ca/img/logo.svg"
+            />
+          </a>
+          <div class="social">
+            <a href="#" class="ig">
+              <i
+                class="fa-brands fa-square-instagram fa-2xl"
+                style="color: #252931"
+              ></i>
+            </a>
+            <a href="#" class="fb">
+              <i
+                class="fa-brands fa-square-facebook fa-2xl"
+                style="color: #252931"
+              ></i>
+            </a>
+            <a href="#" class="lkdin">
+              <i
+                class="fa-brands fa-linkedin fa-2xl"
+                style="color: #252931"
+              ></i>
+            </a>
+          </div>
+        </div>
+        <div class="hl"></div>
+        <div class="section-item">
+          <div class="item">
+            <div class="listing">
+              <div class="listing-title">Listings</div>
+              <a href="#">Northland</a>
+              <a href="#">Auckland</a>
+              <a href="#">Bay of Plenty</a>
+              <a href="#">Waikato</a>
+              <a href="#">Coromandel</a>
+              <a href="#">Gisborne Region</a>
+              <a href="#">Central North Island</a>
+              <a href="#">Hawke's Bay</a>
+              <a href="#">Taranaki</a>
+              <a href="#">Manawatu/Whanganui</a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="listing">
+              <div class="listing-title">&nbsp;</div>
+              <a href="#">Wairarapa</a>
+              <a href="#">Wellington</a>
+              <a href="#">Marlborough</a>
+              <a href="#">Nelson Bays</a>
+              <a href="#">West Coast </a>
+              <a href="#">Canterbury</a>
+              <a href="#">Central Otago/Lakes District </a>
+              <a href="#">Otago</a>
+              <a href="#">Southland </a>
+              <a href="#">Pacific Islands</a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="listing">
+              <div class="listing-title">Explore</div>
+              <a href="#">Residential for sale</a>
+              <a href="#">Residential for rent</a>
+              <a href="#">Property estimates</a>
+              <a href="#">Sold properties</a>
+              <a href="#">Commercial for sale</a>
+              <a href="#">Commercial for lease</a>
+              <a href="#">Businesses for sale</a>
+              <a href="#">Find an agent</a>
+              <a href="#">Rural properties </a>
+              <a href="#">News</a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="listing">
+              <div class="listing-title">Account</div>
+              <a href="#">Profile</a>
+              <a href="#">Saved properties</a>
+              <a href="#">Saved searches</a>
+              <a href="#">Open homes planner</a>
+              <a href="#">Manage notifications</a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="listing">
+              <div class="listing-title">Contact us</div>
+              <span class="address"
+                >Private Bag 92198,<br />
+                Victoria St West,<br />
+                Auckland 1142,<br />
+                New Zealand</span
+              >
+              <a href="#">Contact OneRoof support</a>
+              <a href="#">Contact OneRoof sales</a>
+            </div>
+            <div class="footer-btns">
+              <div class="nzme">
+                <img
+                  src="https://github.com/heatherkyung/oneroof-nzme-2023/blob/main/img/nzme.png?raw=true"
+                />
+              </div>
+              <div class="apl-btn">
+                <a href="#">
+                  <img
+                    alt="applestore"
+                    src="https://github.com/heatherkyung/oneroof-nzme-2023/blob/main/img/App%20Store.png?raw=true"
+                  />
+                </a>
+              </div>
+              <div class="gg-btn">
+                <a href="#">
+                  <img
+                    alt="googleplay"
+                    src="https://github.com/heatherkyung/oneroof-nzme-2023/blob/main/img/Google%20Play.png?raw=true"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-container-copyright">
+      <div class="footer-copyright">
+        <div class="section-copyright">© OneRoof Limited</div>
+        <div class="section-link">
+          <a href="#">About us</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">User terms</a>
+          <a href="#">FAQs</a>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
